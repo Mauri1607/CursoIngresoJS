@@ -1,11 +1,34 @@
 function Mostrar()
 {
+	var positivo = 0;
+	var negativo = 1;
+	var respuesta = true;
+	var num;
 
-	var contador=0;
-	var positivo=0;
-	var negativo=1;
-	
-	var respuesta='si';
+	while(respuesta == true)
+	{
+		num = prompt("Ingrese un numero");
+		num = parseFloat(num);
+
+		while(isNaN(num))
+		{
+			num = prompt("Error! No ingreso un numero... Por favor ingrese un numero");
+			num = parseFloat(num);
+		}
+		
+		if(num >= 0)
+		{
+			positivo += num;
+		}
+		else
+		{
+			negativo *= num;
+		}
+
+		respuesta = confirm("¿Desea ingresar otro numero?");
+		// respuesta = prompt("¿Desea ingresar otro numero? si / no")
+		// respuesta = respuesta.toLowerCase();
+	}
 
 
 document.getElementById('suma').value=positivo;
