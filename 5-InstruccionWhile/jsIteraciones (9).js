@@ -2,7 +2,7 @@ function Mostrar()
 {
 	// declarar variables	
 	var respuesta = true;
-	var flag = true;
+	var flag = true; // <---- flag o bandera... Se usa para ejecutar 1 vez un codigo en casos necesarios... En este caso si se ingresara 1 solo numero tanto min y max tomarian ese valor...
 	var num, min, max;
 
 	while(respuesta == true)

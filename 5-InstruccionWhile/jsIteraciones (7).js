@@ -24,9 +24,7 @@ function Mostrar()
 		// respuesta = prompt("¿Desea ingresar otro numero? si / no")
 		// respuesta = respuesta.toLowerCase();
 	}
-
-
-document.getElementById('suma').value=acumulador;
-document.getElementById('promedio').value=acumulador/contador;
-
+    
+    document.getElementById('suma').value=acumulador;
+    document.getElementById('promedio').value=acumulador/contador;
 }//FIN DE LA FUNCIÓN

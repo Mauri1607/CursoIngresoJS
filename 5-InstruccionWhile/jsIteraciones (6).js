@@ -19,7 +19,6 @@ function Mostrar()
 		acumulador += num;
 	}
 
-document.getElementById('suma').value = acumulador;
-document.getElementById('promedio').value = acumulador/5;
-
+    document.getElementById('suma').value = acumulador;
+    document.getElementById('promedio').value = acumulador/5;
 }//FIN DE LA FUNCIÓN
